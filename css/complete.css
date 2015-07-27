@@ -1,3 +1,12 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*
+ * 全局宽度
+ */
+.wrap{width: 1200px;}
 body, dl, dd, /* dt, 默认没边距 */
 ul, ol, /*li, 默认没边距 */
 h1, h2, h3, h4, h5, h6, pre, /* code, 默认没边距 */

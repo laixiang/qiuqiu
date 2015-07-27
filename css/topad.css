@@ -1,0 +1,28 @@
+.TopAd {
+    width: 100%;
+    height: 535px;
+    overflow: hidden;
+}
+.TopAd a.ad-link{
+    display: block;
+}
+.TopAd a.ad-up,.TopAd a.ad-down{
+    display: block;
+    width: 16px;
+    height: 32px;
+    background: #808080;
+    position: absolute;
+    z-index: 1;
+    right:0;
+    top: 10px;
+    color: #fff;
+    line-height: 1.4;
+    font-size: 12px;
+    text-align: center;
+}
+.TopAd a.ad-up:before{
+    content: '关闭';
+}
+.TopAd a.ad-down:before{
+    content: '打开';
+}

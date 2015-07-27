@@ -23,10 +23,13 @@
 .TopNav li{
     float: left;
 }
+.TopNav li + li{
+    cursor: pointer;
+}
 .TopNav li + li:before{
     content: "|";
 }
-.TopMobile:hover:before{
+.TopMobile:hover:before, .TopNav2:hover:before{
     color: #fff;
 }
 .TopNav li a, .TopNav li.TopLogin{
@@ -96,18 +99,24 @@
 .TopNavBox{
     right: -1px;
     width: 715px;
+    display: none;
 }
 .TopNavBox ul{
     float: left;
     width: 140px;
-    padding: 0 30px;
+    padding: 0 25px;
     height: 150px;
 }
 .TopNavBox ul + ul{
     border-left: 1px dashed #ddd;
 }
+.TopNavBox ul i{
+    margin: 0 5px;
+}
 .TopNavBox ul a{
     display: block;
+    padding:0 0 0 15px;
+    margin-left: 15px;
     background: url("../images/dian.jpg") no-repeat left center;
 }
 
@@ -122,7 +131,7 @@
     border-left: 1px solid #f1f1f1;
     border-right: 1px solid #f1f1f1;
 }
-.TopArea:hover ,.TopMobile:hover{
+.TopArea:hover ,.TopMobile:hover ,.TopNav2:hover{
     background: #fff;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
@@ -138,7 +147,7 @@
 .TopLine{
     background: #fff;
 }
-.TopArea:hover .TopAreaBox, .TopArea:hover .TopLine , .TopMobile:hover .TopMobileBox , .TopMobile:hover .TopLine{
+.TopArea:hover .TopAreaBox, .TopArea:hover .TopLine , .TopMobile:hover .TopMobileBox , .TopMobile:hover .TopLine , .TopNav2:hover .TopNavBox ,.TopNav2:hover .TopLine{
     display: block;
 }
 .TopArea:hover .triangle2, .TopNav li:hover .triangle2{

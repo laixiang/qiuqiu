@@ -1,4 +1,56 @@
+.fl{float: left;}
+.fr{float: right;}
 .ma{margin: 0 auto;}
 .tc{text-align:center;}
 .po-rel{position: relative;}
 .po-abs{position: absolute;}
+
+/* ==========================================================================
+   全局顶部
+   ========================================================================== */
+.Top{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+.TopNav li{
+    float: left;
+}
+.TopNav li a{
+    padding: 0 15px;
+}
+.TopNav li.TopLogin{
+    padding: 0 15px;
+}
+.TopNav li.TopLogin a{
+    border: 0;
+    padding: 0;
+}
+.triangle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+/*三角形*/
+.triangle1,.triangle2{
+    width: 0;
+    height: 0;
+    border:5px solid;
+}
+.triangle1{
+    border-color: #666 transparent transparent transparent;
+    top: 4px;
+}
+.triangle2{
+    border-color: #f1f1f1 transparent transparent transparent;
+    top: 3px;
+}
+
+/*顶部地区选择*/
+.TopAreaBox{
+    width: 310px;
+}
+.TopAreaBox li{
+    float: left;
+    padding: 5px 10px;
+}

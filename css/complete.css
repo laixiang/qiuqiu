@@ -20,7 +20,7 @@ thead, tbody, tfoot, th, td /* th, td 默认 padding:1px */
 /**
  * 非大面积文字排版网站通常不需要列表项，如果需要可单独设置
  */
-ul, ol {
+ul, ol, li{
     list-style-type: none;
     list-style-image: none;
 }
@@ -68,7 +68,7 @@ html {
 }
 
 body {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.8;
 }
 /**

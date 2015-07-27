@@ -1,0 +1,13 @@
+.Top{
+    background: #f1f1f1;
+    color: #666;
+}
+.Top a{
+    color: #666;
+}
+.Top li a:hover, .TopLogin a+a{
+    color: #c81623;
+}
+.TopAreaBox{
+    border: 1px solid #dddddd;
+}

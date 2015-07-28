@@ -1,0 +1,18 @@
+.fl{float: left;}
+.fr{float: right;}
+.ma{margin: 0 auto;}
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.p5{padding: 5px;}
+.p10{padding: 10px;}
+.p010{padding: 0 10px;}
+.tc{text-align:center;}
+.tr{text-align: right;}
+.po-rel{position: relative;}
+.po-abs{position: absolute;}
+.l15{line-height: 1.5}
+.size1of5{width: 20%}
+.size2of5{width: 40%}
+.size3of5{width: 60%}
+.size1of2{width: 50%}
+.size3of10{width: 30%}

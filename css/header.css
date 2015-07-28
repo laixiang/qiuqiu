@@ -79,6 +79,7 @@
 }
 .TopAreaBox li a{
     padding: 5px 8px;
+    color: #666;
 }
 
 /*手机*/
@@ -277,7 +278,7 @@
 .clearing{
     background: #f5f5f5;
     color: #808080;
-    line-height: 29px;
+    line-height: 29px!important;
 }
 .ClearingBtn{
     width: 68px;
@@ -285,6 +286,7 @@
     background: #c81623;
     color: #fff!important;
     display: block;
+    line-height: 29px;
 }
 
 /*热搜*/

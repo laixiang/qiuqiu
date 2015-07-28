@@ -38,13 +38,6 @@ a {
 }
 
 /**
-* 去掉 IE 10+ 点击链接时的灰色背景
-*/
-a:active {
-    background-color: transparent;
-}
-
-/**
  * 去掉点击时的焦点框，同时保证使用键盘可以显示焦点框
  */
 a:active,
@@ -218,6 +211,7 @@ textarea {
     margin: 0; /* 3 */
     vertical-align: baseline; /* 4 */
     *vertical-align: middle; /* 4 */
+    border:0;outline:none;/*去除蓝色边框*/
 }
 
 /**
@@ -330,15 +324,6 @@ textarea {
 select:disabled option:checked,
 option:disabled:checked {
     color: #D2D2D2;
-}
-
-/**
- * 修正 Safari 3+, Chrome 1+ Placeholder 居中问题
- */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    input {
-        line-height: normal !important;
-    }
 }
 
 /**

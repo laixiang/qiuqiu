@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" href="css/complete.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/often.css"/>
     <link rel="stylesheet" href="css/topad.css"/>
@@ -22,7 +23,7 @@
         <img src="images/upload/top-ad.jpg"/>
     </a>
 </div>
-<!--顶部-->
+<!--通用顶部-->
 <div class="Top">
     <div class="wrap ma">
         <div class="TopArea po-rel fl">
@@ -129,5 +130,82 @@
         </div>
     </div>
 </div>
+<!--通用头部 LOGO、搜索、购物车-->
+<div class="Head wrap cf ma mt10">
+    <div class="logo fl">
+        <a href="#" title="球球"><img src="images/logo.jpg"/></a>
+    </div>
+    <div class="search fl mt10">
+        <form>
+            <input type="text" placeholder="搜索其实很简单">
+            <input type="submit" value="搜索">
+        </form>
+    </div>
+    <div class="shopping-cart fr po-rel mt10">
+        <i class="fa fa-shopping-cart fa-lg"></i>
+        <a href="#" target="_blank">我的购物车</a>
+        <i class="fr">></i>
+        <i class="s-count po-abs">2</i>
+        <div class="s-line po-abs"></div>
+        <div class="shopping-cart-box po-abs">
+            <!--购物车为空时-->
+            <div class="p10 shopping-no">
+                购物车中还没有商品，赶紧选购吧！
+            </div>
+            <!--购物车又商品时-->
+            <div class="shopping-cart-list">
+                <div class="cf">
+                    <p class="mt10 p010 l15">最新加入的商品</p>
+                    <li class="slbox p10 cf l15">
+                        <div class="size1of5 fl">
+                            <a href="#">
+                                <img src="images/upload/shop.jpg"/>
+                            </a>
+                        </div>
+                        <div class="size1of2 fl p010">
+                            <a href="#">索尼（SONY） KDL-55W800B 55英寸全高清3D LED液晶电视</a>
+                        </div>
+                        <div class="size3of10 fl tr">
+                            <span>￥5099.00×1</span><br/>
+                            <a href="#">删除</a>
+                        </div>
+                    </li>
+                    <li class="slbox p10 cf l15">
+                        <div class="size1of5 fl">
+                            <a href="#">
+                                <img src="images/upload/shop.jpg"/>
+                            </a>
+                        </div>
+                        <div class="size1of2 fl p010">
+                            <a href="#">索尼（SONY） KDL-55W800B 55英寸全高清3D LED液晶电视</a>
+                        </div>
+                        <div class="size3of10 fl tr">
+                            <span>￥5099.00×1</span><br/>
+                            <a href="#">删除</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="clearing p10 l15">
+                    共2件商品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;共计<strong>￥123123.00</strong>
+                    <a href="#" target="_blank" class="ClearingBtn tc fr">
+                        去购物车
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="HotTags fl mt10">
+        <a href="#">夏清仓</a>
+        <a href="#">低至9.9</a>
+        <a href="#">电器五折</a>
+        <a href="#">夏清仓</a>
+        <a href="#">低至9.9</a>
+        <a href="#">电器五折</a>
+        <a href="#">夏清仓</a>
+        <a href="#">低至9.9</a>
+        <a href="#">电器五折</a>
+    </div>
+</div>
+
 </body>
 </html>

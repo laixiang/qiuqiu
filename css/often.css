@@ -1,15 +1,20 @@
 .fl{float: left;}
 .fr{float: right;}
 .ma{margin: 0 auto;}
+.mt5{margin-top: 5px;}
 .mt10{margin-top: 10px;}
 .mt20{margin-top: 20px;}
 .p5{padding: 5px;}
 .p10{padding: 10px;}
+.p20{padding: 20px;}
+.p07{padding: 0 7px;}
 .p010{padding: 0 10px;}
 .tc{text-align:center;}
 .tr{text-align: right;}
 .po-rel{position: relative;}
 .po-abs{position: absolute;}
+.c6{color: #666;}
+.dis-no{display: none}
 .l15{line-height: 1.5}
 .size1of5{width: 20%}
 .size2of5{width: 40%}

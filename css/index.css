@@ -1,0 +1,196 @@
+/*首页导航*/
+.IndexNav li{
+    float: left;
+    padding: 0 25px;
+}
+.IndexNav li a{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+.IndexNav li a:hover{
+    color: #c81623;
+}
+/*首页幻灯片*/
+.IndexBanner{
+    margin-left: 210px;
+    width: 740px;
+    height: 455px;
+    padding: 10px 10px 0;
+}
+.FocusNO{
+    z-index: 2;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+    bottom:8px;
+}
+.FocusNO li{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: #3e3e3e;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+}
+.FocusNO li.on{
+    background: #b61b1f;
+}
+.FocusBox img{
+    width: 720px;
+    height: 445px;
+}
+.IndexBanner a.prev ,.IndexBanner a.next{
+    width: 28px;
+    height: 62px;
+    position: absolute;
+    z-index: 3;
+    background: url("../images/index/focus.png") repeat;
+    top: 50%;
+    margin-top: -31px;
+    display: none;
+    color: #fff;
+    line-height: 62px;
+    font-size: 20px;
+    text-align: center;
+}
+.IndexBanner a.prev{
+    left: 10px;
+}
+.IndexBanner a.next{
+    right: 10px;
+}
+.IndexBanner:hover .next, .IndexBanner:hover .prev{
+    display: block;
+}
+/*首页新闻 签到*/
+.IndexNews{
+    width: 250px;
+}
+.kuaibao{
+    border: 1px solid #e4e4e4;
+    color: #666;
+    height: 255px;
+}
+.kuaibao h4{
+    border-bottom: 1px dashed #e4e4e4;
+    line-height: 22px;
+}
+.kuaibao h4 a{
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+.kuaibao h4 a:hover{
+    color: #c81623;
+}
+.kblist li{
+    line-height: 2;
+}
+.kblist li span{
+    margin-right: 5px;
+}
+.kblist li span.hd{
+    color: #c81623;
+}
+.kblist li span.gg{
+    color: #59b200;
+}
+.kblist li a{
+    color: #666;
+}
+.kblist li a:hover{
+    color: #c81623;
+}
+/*每日推荐*/
+.day-tj{
+    width: 200px;
+    height: 164px;
+}
+.day-tj img{
+    width: 200px;
+    height: 152px;
+}
+/*推荐图片*/
+.tjsp{
+    margin-left: 200px;
+}
+.tjsp li{
+    float: left;
+    width: 250px;
+}
+.tjsp li img{
+    width: 250px;
+    height: 164px;
+}
+.tjsp li + li{
+    margin-left: 1px;
+    width: 249px;
+}
+.tjsp li + li img{
+    width: 249px;
+}
+/*商超活动*/
+.brand{
+    width: 100%;
+}
+.BrandBox{
+    margin: 0 0 0 199px;
+}
+.LeftBrand,.RightBrand{
+    width: 200px;
+    height: 330px;
+    border: 1px solid #ccc;
+}
+.LeftBrand{
+    margin-left: -100%;
+}
+.RightBrand{
+    margin-left: -200px;
+}
+.BrandBox table{
+    width: 802px;
+    height: 330px;
+}
+.BrandBox table td{
+    text-align: center;
+    vertical-align: middle;
+}
+.sc-more{
+    font-size: 12px;
+    color: #333333;
+}
+.sc-more:hover{
+    color: #c81623;
+}
+/*商超活动左右图片大小限制*/
+.LeftBrand img , .RightBrand img{
+    width: 198px;
+    height: 328px;
+}
+/*商超活动LOGO大小限制*/
+.BrandBox table td img{
+    width: 80px;
+    height: 40px;
+}
+/*首页广告位*/
+.IndexAd img{
+    width: 1200px;
+    height: 60px;
+}
+/*猜你喜欢*/
+.guessyou table{
+    width: 1200px;
+    height: 390px;
+}
+.guessyou table td{
+    padding: 0;
+}
+.guessyou table td img{
+    width: 299px;
+    height: 194px;
+}

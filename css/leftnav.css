@@ -1,0 +1,102 @@
+.LeftNav{
+    width: 100%;
+    height: 46px;
+    border-bottom: 2px solid #b1191a;
+}
+.NavAll{
+    width: 210px;
+    background: #b1191a;
+}
+.topall{
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 46px;
+}
+/*左侧导航主体*/
+.LeftNavBox{
+    width: 210px;
+    height: 455px;
+    background: #c81623;
+    border-left: 1px solid #b1191a;
+    left: 0;
+    top: 46px;
+}
+/*左侧导航列表*/
+.SortMenu{
+    width: 208px;
+    line-height: 33px;
+    color: #fff;
+}
+.SortMenu a{
+    color: #fff;
+}
+.SortMenu a:hover{
+    color: #c81623;
+}
+.sort:hover .SortMenu {
+    background: #f7f7f7;
+    color: #c81623;
+}
+.sort:hover .SortMenu a{
+    color: #c81623;
+}
+.sort:hover .SortMenu span{
+    display: none;
+}
+/*列表线条*/
+.SortLine{
+    height: 0;
+    width: 100%;
+    border-top: 1px solid #b4141f;
+    border-bottom: 1px solid #ce2e39;
+}
+.SortLine2{
+    width: 0;
+    height: 33px;
+    border-left: 1px solid #f7f7f7;
+    z-index: 5;
+}
+/*隐藏分类*/
+.SortBox{
+    width: 750px;
+    border: 1px solid #b1191a;
+    left: 208px;
+    min-height: 456px;
+    top: -1px;
+    background: #f7f7f7;
+    z-index: 4;
+}
+.SortList{
+    line-height: 25px;
+    padding-top: 5px;
+}
+.SortList a{
+    color: #666;
+}
+.SortList a:hover{
+    color: #c81623;
+}
+.SortName{
+    width: 80px;
+}
+.SortName span{
+    margin-left: 10px;
+}
+.SortInfo{
+    margin-left: 95px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+.SortInfo a{
+    padding-right: 10px;
+    display: inline-block;
+}
+.SortInfo a:before{
+    content: "|";
+    padding-right: 10px;
+}
+/*展开隐藏内容*/
+.sort:hover .SortLine2 ,.sort:hover .SortBox{
+    display: block;
+}

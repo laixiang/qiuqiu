@@ -1,6 +1,7 @@
 .fl{float: left;}
 .fr{float: right;}
 .ma{margin: 0 auto;}
+.mb5{margin-bottom: 5px;}
 .mt5{margin-top: 5px;}
 .mt10{margin-top: 10px;}
 .mt20{margin-top: 20px;}
@@ -13,6 +14,7 @@
 .tr{text-align: right;}
 .po-rel{position: relative;}
 .po-abs{position: absolute;}
+.po-fix{position: fixed}
 .c6{color: #666;}
 .dis-no{display: none}
 .l15{line-height: 1.5}
@@ -21,3 +23,12 @@
 .size3of5{width: 60%}
 .size1of2{width: 50%}
 .size3of10{width: 30%}
+.w210{width: 210px;}
+.w218{width: 218px;}
+.w220{width: 220px;}
+.w330{width: 330px;}
+.h180{height: 180px;}
+.h360{height: 360px;}
+.bb{border-bottom: 1px solid #f3f3f3;}
+.br{border-right: 1px solid #f3f3f3;}
+.bt{border-top: 1px solid #f3f3f3;}

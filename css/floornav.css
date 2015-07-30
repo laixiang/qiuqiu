@@ -1,0 +1,26 @@
+/*楼层导航*/
+.FloorNav{
+    width: 75px;
+    right: 50%;
+    margin-right: -690px;
+    top: 50%;
+    margin-top: -185px;
+}
+.RQ-code img{
+    width: 75px;
+    height: 75px;
+}
+.FloorNav li a{
+    display: block;
+    line-height: 26px;
+    background: #f4f4f4;
+    color: #dc0006;
+}
+.FloorNav li a:hover, .FloorNav li.current a{
+    background: #dc0107;
+    color: #fff;
+}
+.FloorNav .toTop{
+    border-top: 1px solid #ddd;
+    line-height: 30px;
+}

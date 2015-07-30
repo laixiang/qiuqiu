@@ -13,6 +13,9 @@
     color: #fff;
     line-height: 46px;
 }
+.topall i{
+    margin: 0 5px;
+}
 /*左侧导航主体*/
 .LeftNavBox{
     width: 210px;
@@ -21,6 +24,7 @@
     border-left: 1px solid #b1191a;
     left: 0;
     top: 46px;
+    z-index: 5;
 }
 /*左侧导航列表*/
 .SortMenu{

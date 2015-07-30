@@ -1,0 +1,202 @@
+/*页面导航*/
+.tynav{
+    background: #c71522;
+}
+.PageNav{
+    line-height: 46px;
+    font-size: 14px;
+}
+.PageNav li{
+    float: left;
+    margin-right: 10px;
+}
+.PageNav li a{
+    display: block;
+    color: #fff;
+    padding: 0 25px;
+}
+.PageNav li a:hover,.PageNav li.current a{
+    background: #A40000;
+}
+/*页面banner*/
+.PageFocus{
+    height: 440px;
+    overflow: hidden;
+}
+.PageFocus-bd{
+    width: 1920px;
+    left: 50%;
+    margin-left: -960px;
+    text-align: center;
+}
+.PageFocus-bd img{
+    height: 440px;
+}
+.PageFocus-hd{
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+    z-index: 2;
+}
+.PageFocus-hd li {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: #3e3e3e;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+}
+.PageFocus-hd li.on{
+    background: #b61b1f;
+}
+/*banner 顶部商品*/
+.PageFocus-top{
+    right: 0;
+    z-index: 3;
+    width: 190px;
+}
+.PageFocus-top a{
+    display: block;
+    width: 190px;
+    height: 219px;
+    margin-bottom: 1px;
+    overflow: hidden;
+}
+/**********************************************
+*                    秒杀
+**********************************************/
+
+
+/*秒杀颜色*/
+.fl1{
+    background-color: #f42760;
+}
+.fl2{
+    background-color: #c928ff;
+}
+.fl3{
+    background-color: #698fff;
+}
+.fl4{
+    background-color: #48d1ff;
+}
+/*秒杀*/
+.pagefloor{
+    width: 100%;
+    height: 350px;
+    background-image: url("../images/pagefloor.png");
+    padding: 15px;
+}
+.p-line{
+    background: url("../images/p-line.png") repeat-x;
+    width: 977px;
+    height: 18px;
+    margin-left: 10px;
+}
+.p-signin{
+    font-size: 16px;
+}
+.p-signin a{
+    color: #fff;
+}
+/*签到状态*/
+.sign{
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: url("../images/sign.png") no-repeat;
+    right: -3px;
+    top: 0;
+}
+.sign-yes{
+    background-position: -15px 0;
+}
+/*秒杀商品*/
+.floor-box li{
+    float: left;
+    width: 280px;
+    height: 280px;
+    background: #fff;
+    font-size: 14px;
+}
+.floor-box  li img{
+    width: 280px;
+    height: 195px;
+}
+.floor-box li + li{
+    margin-left: 16px;
+}
+.floor-box h5 a{
+    color: #505050;
+}
+.floor-box h5 a:hover{
+    color: #c81623;
+}
+.d-time{
+    color: #dc0006;
+}
+.p-i-btn{
+    background: url("../images/p-i-btn.jpg") no-repeat;
+    display: block;
+    line-height: 30px;
+    width: 97px;
+    height: 30px;
+    margin-right: 1px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/**********************************************
+*                    团购
+**********************************************/
+.GroupBox span{
+    font-size: 24px;
+    color: #c81623;
+}
+.ppt li{
+    width: 393px;
+    height: 300px;
+    border: 1px solid #ececec;
+}
+.ppt-img img{
+    width: 381px;
+    height: 191px;
+}
+.ppt-tit,.ppt-bg{
+    bottom: 0;
+    left: 0;
+}
+.ppt-bg{
+    width: 100%;
+    height: 30px;
+    background: #000;
+    opacity: .4;
+    z-index: 1;
+}
+.ppt-tit{
+    z-index: 2;
+    line-height: 30px;
+    color: #fff;
+    width: 100%;
+}
+.ppt-avatar img{
+    width: 80px;
+    height: 80px;
+}
+.ppt-name{
+    margin-left: 90px;
+    line-height: 80px;
+    font-size: 16px;
+}
+.ppt-name h5{
+    color: #444;
+}
+.ppt-name h5 span{
+    color: #e14245;
+    font-size: 26px;
+    margin: 0 5px;
+}

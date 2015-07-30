@@ -194,34 +194,9 @@
     width: 299px;
     height: 194px;
 }
-/*楼层导航*/
-.FloorNav{
-    width: 75px;
-    right: 50%;
-    margin-right: -690px;
-    top: 50%;
-    margin-top: -185px;
-}
-.RQ-code img{
-    width: 75px;
-    height: 75px;
-}
-.FloorNav li a{
-    display: block;
-    line-height: 26px;
-    background: #f4f4f4;
-    color: #dc0006;
-}
-.FloorNav li a:hover, .FloorNav li.current a{
-    background: #dc0107;
-    color: #fff;
-}
-.FloorNav .toTop{
-    border-top: 1px solid #ddd;
-    line-height: 30px;
-}
+
 /*楼层颜色*/
-.section-1 i.icon--4{
+.section-1 i.icon-section{
     color: #fd1620;
     font-size: 24px;
     z-index: -1;
@@ -229,7 +204,7 @@
 .section-1 .section-top{
     border-bottom: 2px solid #fd1620;
 }
-.section-2 i.icon--4 {
+.section-2 i.icon-section {
     color: #796759;
     font-size: 24px;
     z-index: -1;
@@ -243,7 +218,7 @@
 }
 .section-top h4 span{
     margin-right: 40px;
-    margin-left: 1px;
+    margin-left: 3px;
     color: #fff;
     font-size: 14px;
 }

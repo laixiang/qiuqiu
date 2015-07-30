@@ -2,34 +2,22 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>团购</title>
     <link rel="stylesheet" href="css/complete.css"/>
     <link rel="stylesheet" href="css/often.css"/>
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/leftnav.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="css/floornav.css"/>
+    <link rel="stylesheet" href="css/pages.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
-    <link rel="stylesheet" href="css/topad.css"/>
+    <link rel="stylesheet" href="css/floornav.css"/>
     <link rel="stylesheet" href="css/fonts/font-awesome.min.css"/>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="js/topad.js"></script>
-    <script src="js/jquery.scrollToTop.min.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
     <script src="js/jquery.nav.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.scrollToTop.min.js"></script>
 </head>
 <body>
-<!--首页顶部广告-->
-<div class='TopAd tc'>
-    <div class='wrap ma po-rel'>
-        <a href='javascript:;' class='ad-up'></a>
-    </div>
-    <a href="#" target="_blank" class="ad-link">
-        <!--广告图-->
-        <img src="images/upload/top-ad.jpg"/>
-    </a>
-</div>
 <!--通用顶部-->
 <div class="Top">
     <div class="wrap ma">
@@ -214,10 +202,13 @@
     </div>
 </div>
 <!--左侧导航-->
-<div class="LeftNav mt20">
+<div class="LeftNav sec mt20 tynav">
     <div class="wrap ma cf">
         <div class="NavAll po-rel fl">
-            <a href="#" class="topall p010">全部商品分类</a>
+            <a href="#" class="topall p010 tc">
+                全部商品分类
+                <i class="fa fa-caret-down fa-lg"></i>
+            </a>
             <!--左侧主导航-->
             <div class="LeftNavBox po-abs">
                 <div class="sort">
@@ -2638,916 +2629,203 @@
                 </div>
             </div>
         </div>
-        <!--首页导航-->
-        <div class="IndexNav fl p10">
+        <!--页面导航-->
+        <div class="PageNav fl">
             <li><a href="seckill.html">秒杀</a></li>
-            <li><a href="group.html">团购</a></li>
+            <li class="current"><a href="group.html">团购</a></li>
             <li><a href="#">品牌店</a></li>
             <li><a href="#">商超活动</a></li>
         </div>
-        <!--秒杀专场-->
-        <div class="fr mt20">
-            <a href="#">
-                <img src="images/index/miaosha.jpg"/>
+    </div>
+</div>
+<!--页面ban-->
+<div class="PageFocus po-rel">
+    <div class="hd PageFocus-hd po-abs tc">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <div class="bd PageFocus-bd po-abs">
+        <ul>
+            <li><a href="" target="_blank"><img src="images/upload/h1.jpg"></a></li>
+            <li><a href="" target="_blank"><img src="images/upload/h2.jpg"></a></li>
+            <li><a href="" target="_blank"><img src="images/upload/h3.jpg"></a></li>
+        </ul>
+    </div>
+    <div class="wrap ma po-rel">
+        <div class="PageFocus-top po-abs">
+            <a href="#" target="_blank">
+                <img src="images/upload/c1.jpg"/>
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/upload/c2.jpg"/>
             </a>
         </div>
     </div>
+    <script type="text/javascript">
+        jQuery(".PageFocus").slide({mainCell:".bd ul",autoPlay:true});
+    </script>
 </div>
-<!--banner 新闻-->
-<div class="wrap ma cf">
-    <div class="IndexBanner po-rel fl">
-        <div class="hd FocusNO po-abs">
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-        <div class="bd FocusBox">
-            <ul>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/55aca04fN5fab21c9.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/55b1dbc9N78761b81.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/55b5a250N1083a6a8.jpg" />
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <a class="prev" href="javascript:void(0)"><</a>
-        <a class="next" href="javascript:void(0)">></a>
-        <script type="text/javascript">
-            jQuery(".IndexBanner").slide({mainCell:".bd ul",autoPlay:true});
-        </script>
+<!--秒杀楼层-->
+<div id="container" class="wrap ma mt30">
+    <div id="section-1" class="GroupBox">
+        <h3>品<span>牌</span>团</h3>
     </div>
-    <!--新闻-->
-    <div class="IndexNews mt10 fl">
-        <div class="kuaibao">
-            <h4 class="p10">
-                球球快报
-                <a href="#">更多></a>
-            </h4>
-            <div class="kblist p10">
-                <li><a href="#"><span class="hd">[活动]</span>华中开仓特惠 减值不可思议</a></li>
-                <li><a href="#"><span class="gg">[活动]</span>华中开仓特惠 减值不可思议</a></li>
-                <li><a href="#"><span class="hd">[活动]</span>华中开仓特惠 减值不可思议</a></li>
-                <li><a href="#"><span class="gg">[活动]</span>华中开仓特惠 减值不可思议</a></li>
-                <li><a href="#"><span class="hd">[活动]</span>华中开仓特惠 减值不可思议</a></li>
-                <li><a href="#"><span class="hd">[活动]</span>华中开仓特惠 减值不可思议</a></li>
-                <li><a href="#"><span class="hd">[活动]</span>华中开仓特惠 减值不可思议</a></li>
-                <li><a href="#"><span class="gg">[活动]</span>华中开仓特惠 减值不可思议</a></li>
+    <div class="ppt ml-5 mr-5 cf">
+        <li class="m5 p5 fl">
+            <!--商品-->
+            <div class="ppt-img po-rel">
+                <a href="#">
+                    <img src="images/upload/c4.jpg"/>
+                </a>
+                <div class="po-abs ppt-bg"></div>
+                <div class="ppt-tit p010 po-abs">
+                    双重薄荷 专研亮白超值组合
+                    <span class="fr">123人团购</span>
+                </div>
             </div>
-        </div>
-        <div class="mt10">
-            <a href="#">
-                <img src="images/index/qd.jpg"/>
-            </a>
-        </div>
-    </div>
-</div>
-<!--每日推荐-->
-<div class="wrap ma mt10 cf">
-    <div class="day-tj fl">
-        <a href="#">
-            <img src="images/index/tj.jpg"/>
-        </a>
-    </div>
-    <div class="tjsp">
-        <li>
-            <a href="#"><img src="images/index/upload/55b20ac8Na4ed56b7.jpg"/> </a>
+            <!--品牌-->
+            <div class="p10 cf">
+                <div class="ppt-avatar fl">
+                    <a href="#">
+                        <img src="images/upload/avatar.jpg"/>
+                    </a>
+                </div>
+                <div class="ppt-name">
+                    七月超级品牌团
+                    <h5 class="fr"><span>159</span>积分</h5>
+                </div>
+            </div>
         </li>
-        <li>
-            <a href="#"><img src="images/index/upload/55b1c1b0Nc9198f58.jpg"/> </a>
+        <li class="m5 p5 fl">
+            <!--商品-->
+            <div class="ppt-img po-rel">
+                <a href="#">
+                    <img src="images/upload/c5.jpg"/>
+                </a>
+                <div class="po-abs ppt-bg"></div>
+                <div class="ppt-tit p010 po-abs">
+                    双重薄荷 专研亮白超值组合
+                    <span class="fr">123人团购</span>
+                </div>
+            </div>
+            <!--品牌-->
+            <div class="p10 cf">
+                <div class="ppt-avatar fl">
+                    <a href="#">
+                        <img src="images/upload/avatar1.jpg"/>
+                    </a>
+                </div>
+                <div class="ppt-name">
+                    七月超级品牌团
+                    <h5 class="fr"><span>129</span>积分</h5>
+                </div>
+            </div>
         </li>
-        <li>
-            <a href="#"><img src="images/index/upload/55b6ed8eNf5fa5289.jpg"/> </a>
+        <li class="m5 p5 fl">
+            <!--商品-->
+            <div class="ppt-img po-rel">
+                <a href="#">
+                    <img src="images/upload/c4.jpg"/>
+                </a>
+                <div class="po-abs ppt-bg"></div>
+                <div class="ppt-tit p010 po-abs">
+                    双重薄荷 专研亮白超值组合
+                    <span class="fr">123人团购</span>
+                </div>
+            </div>
+            <!--品牌-->
+            <div class="p10 cf">
+                <div class="ppt-avatar fl">
+                    <a href="#">
+                        <img src="images/upload/avatar.jpg"/>
+                    </a>
+                </div>
+                <div class="ppt-name">
+                    七月超级品牌团
+                    <h5 class="fr"><span>159</span>积分</h5>
+                </div>
+            </div>
         </li>
-        <li>
-            <a href="#"><img src="images/index/upload/55b5ec61Nc2b55e4f.jpg"/> </a>
+        <li class="m5 p5 fl">
+            <!--商品-->
+            <div class="ppt-img po-rel">
+                <a href="#">
+                    <img src="images/upload/c5.jpg"/>
+                </a>
+                <div class="po-abs ppt-bg"></div>
+                <div class="ppt-tit p010 po-abs">
+                    双重薄荷 专研亮白超值组合
+                    <span class="fr">123人团购</span>
+                </div>
+            </div>
+            <!--品牌-->
+            <div class="p10 cf">
+                <div class="ppt-avatar fl">
+                    <a href="#">
+                        <img src="images/upload/avatar1.jpg"/>
+                    </a>
+                </div>
+                <div class="ppt-name">
+                    七月超级品牌团
+                    <h5 class="fr"><span>129</span>积分</h5>
+                </div>
+            </div>
+        </li>
+        <li class="m5 p5 fl">
+            <!--商品-->
+            <div class="ppt-img po-rel">
+                <a href="#">
+                    <img src="images/upload/c4.jpg"/>
+                </a>
+                <div class="po-abs ppt-bg"></div>
+                <div class="ppt-tit p010 po-abs">
+                    双重薄荷 专研亮白超值组合
+                    <span class="fr">123人团购</span>
+                </div>
+            </div>
+            <!--品牌-->
+            <div class="p10 cf">
+                <div class="ppt-avatar fl">
+                    <a href="#">
+                        <img src="images/upload/avatar.jpg"/>
+                    </a>
+                </div>
+                <div class="ppt-name">
+                    七月超级品牌团
+                    <h5 class="fr"><span>159</span>积分</h5>
+                </div>
+            </div>
+        </li>
+        <li class="m5 p5 fl">
+            <!--商品-->
+            <div class="ppt-img po-rel">
+                <a href="#">
+                    <img src="images/upload/c5.jpg"/>
+                </a>
+                <div class="po-abs ppt-bg"></div>
+                <div class="ppt-tit p010 po-abs">
+                    双重薄荷 专研亮白超值组合
+                    <span class="fr">123人团购</span>
+                </div>
+            </div>
+            <!--品牌-->
+            <div class="p10 cf">
+                <div class="ppt-avatar fl">
+                    <a href="#">
+                        <img src="images/upload/avatar1.jpg"/>
+                    </a>
+                </div>
+                <div class="ppt-name">
+                    七月超级品牌团
+                    <h5 class="fr"><span>129</span>积分</h5>
+                </div>
+            </div>
         </li>
     </div>
 </div>
-<!--商超活动-->
-<h3 class="wrap mt10 ma c6">
-    商超活动
-    <a href="#" class="fr sc-more mt10">更多+</a>
-</h3>
-<div class="wrap ma mt5 cf">
-    <!--中间LOGO-->
-    <div class="brand fl">
-        <div class="BrandBox">
-            <table>
-                <tr>
-                    <td>
-                        <a href="#"><img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/55b59b0dNa0533b4f.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/5514ecbdN2c42c688.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/55b609cdNbe3f7dcb.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/5530683cN29669c67.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/55306885Nb78cafc3.jpg"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#"><img src="images/index/upload/5434927eN8b487668.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/53d5a7c0Nc5188bc7.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/53be55c9N8d470043.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/53be55a6Nb57439f9.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/544cfebdN36bf1719.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/549beb28N9f685bb9.jpg"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#"><img src="images/index/upload/55b59b0dNa0533b4f.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/5514ecbdN2c42c688.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/55b609cdNbe3f7dcb.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/5530683cN29669c67.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/55306885Nb78cafc3.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#"><img src="images/index/upload/53d5a7c0Nc5188bc7.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/53be55c9N8d470043.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/53be55a6Nb57439f9.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/544cfebdN36bf1719.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/549beb28N9f685bb9.jpg"/></a>
-                    </td>
-                    <td>
-                        <a href="#"><img src="images/index/upload/5434927eN8b487668.jpg"/></a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="LeftBrand fl">
-        <a href="#" target="_blank">
-            <img src="images/index/upload/2PUzbmBw1RtVY.jpg"/>
-        </a>
-    </div>
-    <div class="RightBrand fl">
-        <a href="#" target="_blank">
-            <img src="images/index/upload/1474698849.jpg"/>
-        </a>
-    </div>
-</div>
-<!--广告位1200*60-->
-<div class="IndexAd wrap ma mt10">
-    <a href="#">
-        <img src="images/index/upload/ad.jpg"/>
-    </a>
-</div>
-<!--猜你喜欢-->
-<div class="guessyou wrap ma mt20">
-    <h3 class="c6">猜你喜欢&nbsp;<img class="mt10" src="images/index/cnxh.jpg"/></h3>
-    <table class="mt5">
-        <tr>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp.jpg"/>
-                </a>
-            </td>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp1.jpg"/>
-                </a>
-            </td>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp2.jpg"/>
-                </a>
-            </td>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp4.jpg"/>
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp2.jpg"/>
-                </a>
-            </td>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp4.jpg"/>
-                </a>
-            </td>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp1.jpg"/>
-                </a>
-            </td>
-            <td>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/xhsp.jpg"/>
-                </a>
-            </td>
-        </tr>
-    </table>
-</div>
-<!--广告位1200*60-->
-<div class="IndexAd wrap ma mt10">
-    <a href="#">
-        <img src="images/index/upload/ad.jpg"/>
-    </a>
-</div>
-<!------------------------------------------------------
-                           楼层
--------------------------------------------------------->
-<div id="container" class="wrap ma mt10">
-    <!--F1-->
-    <div id="section-1" class="section-1">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>1F</span>
-                美食娱乐珠宝
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c2.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h360">
-                <div class="br bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div class="br">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl w220 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c6.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--F2-->
-    <div id="section-2" class="section-2 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>2F</span>
-                服装鞋帽箱包
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl bb w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c9.jpg"/>
-                </a>
-            </div>
-            <div class="fl bb w220 h360 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c10.jpg"/>
-                </a>
-            </div>
-            <div class="fl  w220 h360">
-                <div class="bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl bb w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-            <!--二层-->
-            <div class="fl w210 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c11.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c12.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c13.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br bt">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c14.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h180">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c15.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--广告位1200*60-->
-    <div class="IndexAd wrap ma mt10">
-        <a href="#">
-            <img src="images/index/upload/ad.jpg"/>
-        </a>
-    </div>
-    <!--F3-->
-    <div id="section-3" class="section-1 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>3F</span>
-                美食娱乐珠宝
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c2.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h360">
-                <div class="br bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div class="br">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl w220 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c6.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--F4-->
-    <div id="section-4" class="section-2 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>4F</span>
-                服装鞋帽箱包
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl bb w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c9.jpg"/>
-                </a>
-            </div>
-            <div class="fl bb w220 h360 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c10.jpg"/>
-                </a>
-            </div>
-            <div class="fl  w220 h360">
-                <div class="bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl bb w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-            <!--二层-->
-            <div class="fl w210 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c11.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c12.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c13.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br bt">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c14.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h180">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c15.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--广告位1200*60-->
-    <div class="IndexAd wrap ma mt10">
-        <a href="#">
-            <img src="images/index/upload/ad.jpg"/>
-        </a>
-    </div>
-    <!--F5-->
-    <div id="section-5" class="section-1 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>5F</span>
-                美食娱乐珠宝
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c2.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h360">
-                <div class="br bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div class="br">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl w220 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c6.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--F6-->
-    <div id="section-6" class="section-2 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>6F</span>
-                服装鞋帽箱包
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl bb w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c9.jpg"/>
-                </a>
-            </div>
-            <div class="fl bb w220 h360 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c10.jpg"/>
-                </a>
-            </div>
-            <div class="fl  w220 h360">
-                <div class="bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl bb w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-            <!--二层-->
-            <div class="fl w210 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c11.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c12.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c13.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br bt">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c14.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h180">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c15.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--广告位1200*60-->
-    <div class="IndexAd wrap ma mt10">
-        <a href="#">
-            <img src="images/index/upload/ad.jpg"/>
-        </a>
-    </div>
-    <!--F7-->
-    <div id="section-7" class="section-1 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>7F</span>
-                美食娱乐珠宝
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c2.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h360">
-                <div class="br bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div class="br">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl w220 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c6.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--F8-->
-    <div id="section-8" class="section-2 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>8F</span>
-                服装鞋帽箱包
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl bb w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c9.jpg"/>
-                </a>
-            </div>
-            <div class="fl bb w220 h360 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c10.jpg"/>
-                </a>
-            </div>
-            <div class="fl  w220 h360">
-                <div class="bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div>
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl bb w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-            <!--二层-->
-            <div class="fl w210 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c11.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c12.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c13.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h180 br bt">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c14.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h180">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c15.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--广告位1200*60-->
-    <div class="IndexAd wrap ma mt10">
-        <a href="#">
-            <img src="images/index/upload/ad.jpg"/>
-        </a>
-    </div>
-    <!--F7-->
-    <div id="section-9" class="section-1 mt10">
-        <!--楼层标题-->
-        <div class="section-top po-rel">
-            <i class="icon-section po-abs"></i>
-            <h4 class="c6">
-                <span>9F</span>
-                美食娱乐珠宝
-            </h4>
-        </div>
-        <!--楼层内容-->
-        <div class="section-box cf">
-            <div class="fl w210 h360">
-                <div class="section-nav p10 cf">
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口牛奶</a></li>
-                    <li><a href="#">进口粮油</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                    <li><a href="#">进口巧克力</a></li>
-                    <li><a href="#">进口饼干</a></li>
-                </div>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c1.jpg"/>
-                </a>
-            </div>
-            <div class="fl w330 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c2.jpg"/>
-                </a>
-            </div>
-            <div class="fl w220 h360">
-                <div class="br bb">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c3.jpg"/>
-                    </a>
-                </div>
-                <div class="br">
-                    <a href="#" target="_blank">
-                        <img src="images/index/upload/c4.jpg"/>
-                    </a>
-                </div>
-            </div>
-            <div class="fl w220 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c6.jpg"/>
-                </a>
-            </div>
-            <div class="fl w218 h360">
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c7.jpg"/>
-                </a>
-                <a href="#" target="_blank">
-                    <img src="images/index/upload/c8.jpg"/>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!--楼层导航-->
 <div class="FloorNav po-fix tc">
     <div class="QR-code mb5">
@@ -3555,15 +2833,8 @@
         <p>球球积分商城<br/>手机客户端</p>
     </div>
     <div id="nav">
-        <li class="current"><a href="#section-1">F1美食娱乐</a></li>
-        <li><a href="#section-2">F2服装鞋帽</a></li>
-        <li><a href="#section-3">F3手机电脑</a></li>
-        <li><a href="#section-4">F4母婴美妆</a></li>
-        <li><a href="#section-5">F5家用电器</a></li>
-        <li><a href="#section-6">F6运动休闲</a></li>
-        <li><a href="#section-7">F7家居建材</a></li>
-        <li><a href="#section-8">F8汽车用品</a></li>
-        <li><a href="#section-9">F9房产地产</a></li>
+        <li class="current"><a href="#section-1">品牌团</a></li>
+        <li><a href="#section-2">单品团</a></li>
     </div>
     <li><a href="#" id="toTop" class="toTop">返回顶部</a></li>
 </div>

@@ -1,0 +1,38 @@
+.footad{
+    background: #f5f5f5;
+}
+.footer-nav{
+    border-top: 2px solid #aaa;
+    background: #e7e7e7;
+    color: #626262;
+}
+.footer-nav li{
+    line-height: 25px;
+}
+.footer-nav li a{
+    color:#626262;
+}
+.footer-nav li a:hover{
+    color: #c81623;
+}
+.icon-phone{
+    font-size: 35px;
+    color: #bfbfbf;
+}
+.footer-service{
+    background: #e11619;
+    display: inline-block;
+    line-height: 35px;
+    border-radius: 4px;
+    color: #fff;
+}
+.footer-links li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.copyright{
+    line-height:25px;
+}
+.copyright a{
+    margin: 0 5px;
+}

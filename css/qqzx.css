@@ -1,0 +1,55 @@
+.qqrbnr{ width:970px; min-height:600px; margin-left:230px; border:1px solid #ebebeb; margin-top:20px; padding-top:10px;}
+.qqrbnr_bt{ width:925px; height:40px; margin:0 auto; font-size:18px; text-align:center; line-height:48px; color:#666666;  border-bottom: 1px solid #ebebeb;}
+.qqrbnr_bta{ width:925px; height:70px;  border-bottom:1px solid #ebebeb; margin:0 auto; font-size:18px; text-align:center; line-height:50px; color:#666666;}
+.qqrbnr_bt_p{ font-size:13px; float:left;   line-height: 30px;  MARGIN-LEFT: 400px;}
+.share_m1{ width:170px; height:20px; float:right; background:#999; margin-top:5px;}
+.qq_con{ width:970px; padding:25px; font-size:14px; color:#7B7B7B; }
+
+/********************球球快讯列表******************************/
+.list_kx{ width:1200px; min-height:500px; padding-top:12px; margin:0 auto; margin-bottom:35px;}
+.list_kx_left{ width:593px; float:left; border:1px solid #f0f0f0;}
+.list_kx_right{ width:593px; float:right; border:1px solid #f0f0f0;}
+.list_top{ width:593px; height:30px; background:#f7f7f7; border-bottom:1px solid #f0f0f0;}
+.list_top_p1{ font-size:13px; color:#676767; font-weight:bold; line-height:30px; float:left; margin-left:10px;}
+.list_top_p2{ font-size:13px; color:#676767; font-weight:bold; line-height:30px; float:right; margin-right:10px;}
+.list_k_ul{ width:593px; padding:10px;}
+.list_k_l1{ width:573px; height:30px; border-bottom:1px dotted #dadada; line-height:30px;}
+.list_k_span1{ float:right; color:#9f97a2; font-size:14px;}
+.list_k_l1 a{ color:#0262ac; font-size:14px;}
+.list_k_l1 a:hover{ color:#999;}
+
+.kuaibaa{ border: 1px solid #e4e4e4; color: #666; height: 255px; width:250px; float:right;}
+.kuaibaa h4 { border-bottom: 1px dashed #e4e4e4; line-height: 22px;}
+.zjf_content{ width:938px; border: 1px solid #e4e4e4; float:left; padding: 5px 10px; margin: 0 auto;}
+.qq_kban1{ width:908px; font-size:18px; height:40px; text-align:center; line-height:40px; color:#666; border-bottom:1px solid #ebebeb; margin:0 auto; margin-top:6px;}
+.qq_kban2{ width:908px; height:40px; margin:0 auto; margin-top:6px;}
+.qq_kban2 p{ float:left; margin-left:400px; font-size:13px; color:#999;}
+.qq_kban2 img{  margin-left:130px; }
+.qq_kban3{ width:908px; padding:10px; line-height:25px; color:#666; font-size:14px;}
+.qq_kbaimg{ display:block; margin:0 auto;}
+.qq_kban4{ width:908px; border-bottom:1px solid #ebebeb; margin-top:10px; margin-bottom:20px;}
+.qqjfzrw{ width:908px; height:42px;}
+.qqjfzrw img{ float:left;}
+.qqjfzrw span{ float:left; margin-left:12px; background:url(../images/dpsy/listwxts.jpg) no-repeat; padding-left:30px; margin-top:20px; font-size:14px; color:#c71522;}
+.qq_kban5{ width:908px; margin-top:10px; margin-bottom:10px; margin-left:10px;}
+.qq_kban_p1{ font-size:15px; color:#333; line-height:40px;}
+.qq_kban_p2{font-size:14px; color:#333; line-height:30px;}
+.qq_kban6{ width:908px; margin-top:10px; margin-bottom:10px; margin-left:10px;}
+.qdjf_left{ width:270px; height:220px; float:left;}
+.qdjf_le1{ width:270px; height:65px; background:url(../images/dpsy/list_dg.jpg) no-repeat; padding-left:75px; font-size:15px;color:#c71522; line-height:30px;}
+.qdjf_le2{ width:250px; height:40px; background:#c71522; font-size:18px; color:#fff; margin-top:15px; line-height:40px; text-align:center;  letter-spacing:10px;}
+.qdjf_le3{ width:250px; height:40px; background:#d6d6d6; font-size:18px; color:#555; margin-top:15px; line-height:40px; text-align:center;}
+
+.qdjf_right{ width:270px; height:220px; float:left; margin-left:80px;}
+.qdjf_le4{ width:270px; height:65px; background:url(../images/dpsy/list_cw.jpg) no-repeat; padding-left:75px; font-size:15px;color:#c71522; line-height:30px;}
+.qdjf_le5{ width:250px; height:40px; background:#c71522; font-size:18px; color:#fff; margin-top:15px; line-height:40px; text-align:center;  letter-spacing:10px;}
+.qdjf_le6{ width:250px; height:40px; background:#d6d6d6; font-size:18px; color:#555; margin-top:15px; line-height:40px; text-align:center;}
+.qdjf_le7{ width:100px; height:30px; border:1px solid #c51522; border-radius:3px; display:block; margin-left:70px; margin-top:10px; text-align:center; line-height:30px; font-size:15px; color: #c51522;}
+
+
+
+
+
+
+
+

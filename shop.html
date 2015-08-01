@@ -21,6 +21,18 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            $(".pop-close").click(function(){
+                $(".pop-shadow").hide();
+                $(".pop-box").hide();
+            });
+            $(".pop").click(function(){
+                $(".pop-shadow").show();
+                $(".pop-box").show();
+            });
+        });
+    </script>
 </head>
 <body>
 <!--通用顶部-->
@@ -2715,7 +2727,7 @@
                 <div class="mt20">
                     <div class="size1of5 fl">&nbsp;</div>
                     <div class="size4of5 fl">
-                        <a class="shop-btn ma tc" href="#">加入购物车</a>
+                        <a class="shop-btn ma tc pop" href="javascript:">加入购物车</a>
                     </div>
                 </div>
             </div>
@@ -2826,9 +2838,20 @@
     </div>
 </div>
 
-
-
-
+<div class="pop-shadow po-fix dis-no"></div>
+<div class="pop-box po-fix dis-no">
+    <div class="pop-box-hd p010 po-rel">
+        <h4>特别提示</h4>
+        <a class="pop-close po-abs p-c" href="#"><i class="fa fa-close"></i></a>
+    </div>
+    <div class="p20 pop-box-bd">
+        <p>参与次产品0元秒杀，需要扣除3个积分（此产品只有一个，秒杀成功或不成功都需要扣除3个积分）</p>
+        <div class="tc mt20">
+            <input type="submit" value="取消" class="pop-close">
+            <input type="submit" value="确定">
+        </div>
+    </div>
+</div>
 
 <!--楼层导航-->
 <div class="FloorNav po-fix tc">

@@ -556,3 +556,49 @@
     width: 280px;
     height: 260px;
 }
+/*弹框*/
+.pop-shadow{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    opacity: .6;
+}
+.pop-box{
+    width: 500px;
+    height: 200px;
+    z-index: 11;
+    left: 50%;
+    margin-left: -250px;
+    top: 50%;
+    margin-top: -100px;
+    background: #fff;
+}
+.pop-box-hd{
+    border-bottom: 1px solid #c81623;
+    line-height: 40px;
+}
+.p-c{
+    right: 10px;
+    top: 10px;
+    line-height: 20px;
+    color: #c81623;
+}
+.pop-box-bd{
+    font-size: 14px;
+}
+.pop-box-bd input[type="submit"]{
+    border: 1px solid #c81623;
+    background: none;
+    width: 160px;
+    line-height: 35px;
+    text-align: center;
+    margin: 0 10px;
+    color: #c81623;
+}
+.pop-box-bd  input + input[type="submit"]{
+    color: #fff;
+    background: #c81623;
+}

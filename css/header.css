@@ -231,7 +231,7 @@
     background: #fff;
     bottom: -2px;
     left: 0;
-    z-index: 4;
+    z-index: 6;
     display: none;
 }
 .shopping-cart-box{
@@ -240,7 +240,7 @@
     border: 1px solid #ddd;
     right: -1px;
     box-shadow: 0 0 3px #bbb;
-    z-index: 3;
+    z-index: 5;
     display: none;
 }
 .shopping-cart:hover{

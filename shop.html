@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>秒杀</title>
+    <title>商超活动</title>
     <link rel="stylesheet" href="css/complete.css"/>
     <link rel="stylesheet" href="css/often.css"/>
     <link rel="stylesheet" href="css/header.css"/>
@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="css/fonts/font-awesome.min.css"/>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="js/jquery.nav.min.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
     <script src="js/jquery.scrollToTop.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".ShopSkin li").click(function(){
+                $(this).addClass("selected").siblings().removeClass("selected");
+            });
+        });
+    </script>
 </head>
 <body>
 <!--通用顶部-->
@@ -210,7 +215,7 @@
                 <i class="fa fa-caret-down fa-lg"></i>
             </a>
             <!--左侧主导航-->
-            <div class="LeftNavBox po-abs">
+            <div class="LeftNavBox po-abs dis-no">
                 <div class="sort">
                     <h5 class="SortMenu p07 fl">
                         <a href="#">美食</a>、
@@ -2631,361 +2636,208 @@
         </div>
         <!--页面导航-->
         <div class="PageNav fl">
-            <li class="current"><a href="seckill.html">秒杀</a></li>
+            <li><a href="seckill.html">秒杀</a></li>
             <li><a href="group.html">团购</a></li>
             <li><a href="brand.html">品牌店</a></li>
-            <li><a href="supermarket.html">商超活动</a></li>
+            <li class="current"><a href="supermarket.html">商超活动</a></li>
         </div>
     </div>
 </div>
-<!--页面ban-->
-<div class="PageFocus po-rel">
-    <div class="hd PageFocus-hd po-abs tc">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    </div>
-    <div class="bd PageFocus-bd po-abs">
-        <ul>
-            <li><a href="" target="_blank"><img src="images/upload/h1.jpg"></a></li>
-            <li><a href="" target="_blank"><img src="images/upload/h2.jpg"></a></li>
-            <li><a href="" target="_blank"><img src="images/upload/h3.jpg"></a></li>
-        </ul>
-    </div>
-    <div class="wrap ma po-rel">
-        <div class="PageFocus-top po-abs">
-            <a href="#" target="_blank">
-                <img src="images/upload/c1.jpg"/>
-            </a>
-            <a href="#" target="_blank">
-                <img src="images/upload/c2.jpg"/>
-            </a>
-        </div>
-    </div>
-    <script type="text/javascript">
-        jQuery(".PageFocus").slide({mainCell:".bd ul",autoPlay:true});
-    </script>
+<!--可关闭广告-->
+<div class="wrap ma mt10 po-rel pagead">
+    <a href="#">
+        <img src="images/upload/ad.jpg"/>
+    </a>
+    <a href="#" class="close-ad fa fa-close tc po-abs"></a>
 </div>
-<!--秒杀楼层-->
-<div id="container" class="wrap ma mt30">
-    <div id="section-1" class="pagefloor fl1 ">
-        <div class="f-tit cf">
-            <img src="images/z.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
-                <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign"></i>
-                </a>
+<!------------------------------------------
+                   商品详情
+------------------------------------------>
+<div class="wrap ma mt10 cf">
+    <div class="shop-box fl">
+        <!--商品图片 名称-->
+        <div class="cf">
+            <!--商品图片-->
+            <div class="ShopSlideShow fl">
+                <div class="SlideShow-bd">
+                    <ul>
+                        <li><img src="images/upload/c11.jpg"/></li>
+                        <li><img src="images/upload/c12.jpg"/></li>
+                        <li><img src="images/upload/c13.jpg"/></li>
+                        <li><img src="images/upload/c14.jpg"/></li>
+                    </ul>
+                </div>
+                <div class="hd SlideShow-hd ml-5 mr-5 cf mt5">
+                    <ul>
+                        <li>
+                            <i class="fa fa-caret-up po-abs"></i>
+                            <img src="images/upload/c11.jpg"/>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-up po-abs"></i>
+                            <img src="images/upload/c12.jpg"/></li>
+                        <li>
+                            <i class="fa fa-caret-up po-abs"></i>
+                            <img src="images/upload/c13.jpg"/>
+                        </li>
+                        <li>
+                            <i class="fa fa-caret-up po-abs"></i>
+                            <img src="images/upload/c14.jpg"/>
+                        </li>
+                    </ul>
+                </div>
+                <script type="text/javascript">jQuery(".ShopSlideShow").slide({ mainCell:".SlideShow-bd ul",effect:"left",autoPlay:false,trigger:"click" });</script>
+            </div>
+            <div class="ShopName p010">
+                <h3>1967 Mustang Fastback Shelby G.T.500CR</h3>
+                <p>一个770马力的增压发动机,先进的多连杆赛车悬架,并注入现代超级跑车技术.</p>
+                <h4 class="mt10">距离秒杀开始还有：<span>1天23小时2分12秒</span></h4>
+                <h4 class="price p010">团购价：<span>1780000.00</span>积分</h4>
+                <div class="ShopSkin mt10">
+                    <div class="size1of5 fl p010 mt5 c6">颜色</div>
+                    <div class="size4of5 fl p010">
+                        <li><a>黑色</a></li>
+                        <li><a>红色</a></li>
+                        <li><a>绿色</a></li>
+                        <li><a>灰色</a></li>
+                        <li><a>蓝色</a></li>
+                    </div>
+                </div>
+                <div class="ShopSkin mt10">
+                    <div class="size1of5 fl p010 mt5 c6">变速箱类型</div>
+                    <div class="size4of5 fl p010">
+                        <li><a>Shelby G.T.500CR 545</a></li>
+                        <li><a>Shelby G.T.500CR 900S</a></li>
+                        <li><a>Shelby G.T.350CR</a></li>
+                        <li><a>Shelby G.T.500CR Roadster</a></li>
+                    </div>
+                </div>
+                <div class="mt20">
+                    <div class="size1of5 fl">&nbsp;</div>
+                    <div class="size4of5 fl">
+                        <a class="shop-btn ma tc" href="#">加入购物车</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
+        <div class="shop-info mt10">
+            <div class="hd shop-hd">
+                <ul>
+                    <li>
+                        商品详情
+                        <div class="selected-indicator dis-no"></div>
+                    </li>
+                    <li>累计评价
+                        <span>123</span>
+                        <div class="selected-indicator dis-no"></div>
+                    </li>
+                    <li>
+                        产品参数
+                        <div class="selected-indicator dis-no"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bd shop-bd p10">
+                <ul class="ShopInfoBox">
+                    <img src="images/upload/c-9.jpeg"/>
+                    <img src="images/upload/c-1.jpeg"/>
+                    <img src="images/upload/c-2.jpeg"/>
+                    <img src="images/upload/c-3.jpeg"/>
+                    <img src="images/upload/c-4.jpeg"/>
+                    <img src="images/upload/c-5.jpeg"/>
+                    <img src="images/upload/c-6.jpeg"/>
+                    <img src="images/upload/c-7.jpeg"/>
+                    <img src="images/upload/c-8.jpeg"/>
+                </ul>
+                <ul class="ShopComment cf">
+                    <div class="CommentHd ml-10 mr-10 cf tc">
+                        <div class="fl size1of3">评论心得</div>
+                        <div class="fl size1of3">购买信息</div>
+                        <div class="fl size1of3">评论者</div>
+                    </div>
+                    <div class="CommentBd c6">
+                        <li class="cf">
+                            <div class="fl size2of5 p10">很好很实用，发货快，质量也有保证，性能很好，速度超快，外观大气，美美得，我很喜欢。</div>
+                            <div class="fl size2of5 p10"><p>颜色：红色</p><p>型号：Shelby G.T.500CR Roadster</p></div>
+                            <div class="fl size1of5 p10"><p>老刘 </p>2015-07-15 15:41 购买</div>
+                        </li>
+                        <li class="cf">
+                            <div class="fl size2of5 p10">很好很实用，发货快，质量也有保证，性能很好，速度超快，外观大气，美美得，我很喜欢。</div>
+                            <div class="fl size2of5 p10"><p>颜色：红色</p><p>型号：Shelby G.T.500CR Roadster</p></div>
+                            <div class="fl size1of5 p10"><p>老刘 </p>2015-07-15 15:41 购买</div>
+                        </li>
+                        <li class="cf">
+                            <div class="fl size2of5 p10">很好很实用，发货快，质量也有保证，性能很好，速度超快，外观大气，美美得，我很喜欢。</div>
+                            <div class="fl size2of5 p10"><p>颜色：红色</p><p>型号：Shelby G.T.500CR Roadster</p></div>
+                            <div class="fl size1of5 p10"><p>老刘 </p>2015-07-15 15:41 购买</div>
+                        </li>
+                        <li class="cf">
+                            <div class="fl size2of5 p10">很好很实用，发货快，质量也有保证，性能很好，速度超快，外观大气，美美得，我很喜欢。</div>
+                            <div class="fl size2of5 p10"><p>颜色：红色</p><p>型号：Shelby G.T.500CR Roadster</p></div>
+                            <div class="fl size1of5 p10"><p>老刘 </p>2015-07-15 15:41 购买</div>
+                        </li>
+                    </div>
+                </ul>
+                <ul class="cf Shop">
+                    <h4 class="tc">1967 Mustang Fastback Shelby G.T.500CR 900S Model Specs</h4>
+                </ul>
+            </div>
         </div>
+        <script type="text/javascript">jQuery(".shop-info").slide({trigger:"click"});</script>
     </div>
-    <div id="section-2" class="pagefloor fl2 mt20">
-        <div class="f-tit cf">
-            <img src="images/y.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
+    <!--侧边栏-->
+    <div class="sidebar p10">
+        <h4>
+            推荐·团购
+            <a href="#" class="undo fr mt5 c6"><i class="fa fa-undo"></i>换一换</a>
+        </h4>
+        <div class="SidebarShop tc">
+            <li>
                 <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign sign-yes"></i>
+                    <img src="images/upload/sc1.jpg"/>
+                    <p>3.3英寸宽屏笔记本电脑 128GB</p>
                 </a>
-            </div>
-        </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
             </li>
             <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-        </div>
-    </div>
-    <div id="section-3" class="pagefloor fl3 mt20">
-        <div class="f-tit cf">
-            <img src="images/b.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
                 <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign sign-yes"></i>
+                    <img src="images/upload/sc1.jpg"/>
+                    <p>3.3英寸宽屏笔记本电脑 128GB</p>
                 </a>
-            </div>
-        </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
             </li>
             <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-        </div>
-    </div>
-    <div id="section-4" class="pagefloor fl4 mt20">
-        <div class="f-tit cf">
-            <img src="images/n.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
                 <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign sign-yes"></i>
+                    <img src="images/upload/sc1.jpg"/>
+                    <p>3.3英寸宽屏笔记本电脑 128GB</p>
                 </a>
-            </div>
-        </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
             </li>
             <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+                <a href="#">
+                    <img src="images/upload/sc1.jpg"/>
+                    <p>3.3英寸宽屏笔记本电脑 128GB</p>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
             </li>
             <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+                <a href="#">
+                    <img src="images/upload/sc1.jpg"/>
+                    <p>3.3英寸宽屏笔记本电脑 128GB</p>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
             </li>
         </div>
     </div>
 </div>
+
+
+
+
+
 <!--楼层导航-->
 <div class="FloorNav po-fix tc">
     <div class="QR-code mb5">
         <img src="images/index/upload/qrcode.jpg"/>
         <p>球球积分商城<br/>手机客户端</p>
     </div>
-    <div id="nav">
-        <li class="current"><a href="#section-1">周秒杀专场</a></li>
-        <li><a href="#section-2">月秒杀专场</a></li>
-        <li><a href="#section-3">半年秒杀专场</a></li>
-        <li><a href="#section-4">年秒杀专场</a></li>
-    </div>
     <li><a href="#" id="toTop" class="toTop">返回顶部</a></li>
 </div>
-
 <!--底部-->
 <div class="footad p20 mt20">
     <div class="wrap ma tc">
@@ -3063,12 +2915,6 @@
 <script type="text/javascript">
     $(function() {
         $("#toTop").scrollToTop(1000);
-    });
-    $(document).ready(function(){
-        $('#nav').onePageNav({
-            filter: ':not(.external)',
-            scrollThreshold: 0.25
-        });
     });
 </script>
 </body>

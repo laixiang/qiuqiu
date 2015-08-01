@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>秒杀</title>
+    <title>团购</title>
     <link rel="stylesheet" href="css/complete.css"/>
     <link rel="stylesheet" href="css/often.css"/>
     <link rel="stylesheet" href="css/header.css"/>
@@ -16,6 +16,13 @@
     <script src="js/jquery.nav.min.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
     <script src="js/jquery.scrollToTop.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".brand-logo li:even").addClass('brd');
+            $(".brand-logo li:nth-child(n+7)").addClass('bbn');
+        });
+    </script>
+
 </head>
 <body>
 <!--通用顶部-->
@@ -2631,9 +2638,9 @@
         </div>
         <!--页面导航-->
         <div class="PageNav fl">
-            <li class="current"><a href="seckill.html">秒杀</a></li>
+            <li><a href="seckill.html">秒杀</a></li>
             <li><a href="group.html">团购</a></li>
-            <li><a href="brand.html">品牌店</a></li>
+            <li class="current"><a href="brand.html">品牌店</a></li>
             <li><a href="supermarket.html">商超活动</a></li>
         </div>
     </div>
@@ -2668,306 +2675,548 @@
         jQuery(".PageFocus").slide({mainCell:".bd ul",autoPlay:true});
     </script>
 </div>
-<!--秒杀楼层-->
+<!--品牌店楼层-->
 <div id="container" class="wrap ma mt30">
-    <div id="section-1" class="pagefloor fl1 ">
-        <div class="f-tit cf">
-            <img src="images/z.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
+    <div id="section-1" class="brand-tit">
+        <i class="fa fa-circle fl"></i>
+        <h3 class=" po-rel">
+            <span>1</span>
+            知名品牌
+            <i class="fa fa-chevron-circle-right"></i>
+        </h3>
+    </div>
+    <div class="ml-5 mr-5 cf">
+        <div class="brand-box m5 fl">
+            <h5 class="b-1 p010">休闲户外</h5>
+            <div class="brand-img">
                 <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign"></i>
+                    <img src="images/upload/c7.jpg"/>
                 </a>
             </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
         </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+        <div class="brand-box m5 fl">
+            <h5 class="b-2 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl">
+            <h5 class="b-3 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl">
+            <h5 class="b-4 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl">
+            <h5 class="b-5 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl brand-t-logo">
+            <a href="#">
+                <img src="images/upload/brand-l.jpg"/>
+            </a>
+            <a href="#">
+                <img src="images/upload/brand.jpg"/>
+            </a>
+            <a href="#">
+                <img src="images/upload/brand-l.jpg"/>
+            </a>
         </div>
     </div>
-    <div id="section-2" class="pagefloor fl2 mt20">
-        <div class="f-tit cf">
-            <img src="images/y.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
-                <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign sign-yes"></i>
-                </a>
-            </div>
-        </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-        </div>
+    <div id="section-2" class="brand-tit mt20">
+        <i class="fa fa-circle fl"></i>
+        <h3 class=" po-rel">
+            <span>2</span>
+            团购品牌
+            <i class="fa fa-chevron-circle-right"></i>
+        </h3>
     </div>
-    <div id="section-3" class="pagefloor fl3 mt20">
-        <div class="f-tit cf">
-            <img src="images/b.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
+    <div class="ml-5 mr-5 cf">
+        <div class="brand-box m5 fl">
+            <h5 class="b-1 p010">休闲户外</h5>
+            <div class="brand-img">
                 <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign sign-yes"></i>
+                    <img src="images/upload/c7.jpg"/>
                 </a>
             </div>
-        </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
-                </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-        </div>
-    </div>
-    <div id="section-4" class="pagefloor fl4 mt20">
-        <div class="f-tit cf">
-            <img src="images/n.png" class="fl"/>
-            <div class="p-line fl mt10"></div>
-            <div class="po-rel fr p-signin mt5">
-                <a href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                    签到
-                    <i class="po-abs sign sign-yes"></i>
-                </a>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
             </div>
         </div>
-        <div class="floor-box mt10">
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+        <div class="brand-box m5 fl">
+            <h5 class="b-2 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl">
+            <h5 class="b-3 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl">
+            <h5 class="b-4 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
-            <li>
-                <a href="#" target="_blank">
-                    <img src="images/upload/c3.jpg"/>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl">
+            <h5 class="b-5 p010">休闲户外</h5>
+            <div class="brand-img">
+                <a href="#">
+                    <img src="images/upload/c7.jpg"/>
                 </a>
-                <div class="ml15">
-                    <h5><a href="#" target="_blank">云蕾马桶刷 洁厕刷带底座</a></h5>
-                    距开始：<br/>
-                    <h4 class="d-time">
-                        1天02时18分11秒
-                        <a href="#" class="p-i-btn tc fr">
-                            查看详情+
-                        </a>
-                    </h4>
-                </div>
-            </li>
+            </div>
+            <div class="brand-logo">
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/552cb1a7Ndbdf6cc0.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b59b0dNa0533b4f.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5514ecbdN2c42c688.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55b609cdNbe3f7dcb.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5530683cN29669c67.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/55306885Nb78cafc3.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/5434927eN8b487668.jpg">
+                    </a>
+                </li>
+                <li class="p10 bbd">
+                    <a href="#">
+                        <img src="images/index/upload/53d5a7c0Nc5188bc7.jpg">
+                    </a>
+                </li>
+            </div>
+        </div>
+        <div class="brand-box m5 fl brand-t-logo">
+            <a href="#">
+                <img src="images/upload/brand-l.jpg"/>
+            </a>
+            <a href="#">
+                <img src="images/upload/brand.jpg"/>
+            </a>
+            <a href="#">
+                <img src="images/upload/brand-l.jpg"/>
+            </a>
         </div>
     </div>
 </div>
@@ -2978,10 +3227,8 @@
         <p>球球积分商城<br/>手机客户端</p>
     </div>
     <div id="nav">
-        <li class="current"><a href="#section-1">周秒杀专场</a></li>
-        <li><a href="#section-2">月秒杀专场</a></li>
-        <li><a href="#section-3">半年秒杀专场</a></li>
-        <li><a href="#section-4">年秒杀专场</a></li>
+        <li class="current"><a href="#section-1">知名品牌</a></li>
+        <li><a href="#section-2">团购品牌</a></li>
     </div>
     <li><a href="#" id="toTop" class="toTop">返回顶部</a></li>
 </div>

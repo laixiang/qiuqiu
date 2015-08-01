@@ -200,3 +200,359 @@
     font-size: 26px;
     margin: 0 5px;
 }
+/*单品*/
+.dpt li{
+    width: 393px;
+    height: 328px;
+    border: 1px solid #ececec;
+}
+.dpt-img img{
+    width: 381px;
+    height: 251px;
+}
+.dpt-tit a{
+    color: #666;
+    font-size: 14px;
+}
+.dpt-tit a:hover{
+    color: #c81623;
+}
+.g-jf h4{
+    line-height: 30px;
+    color: #666;
+}
+.g-jf i{
+    font-style: normal;
+    font-size: 24px;
+    color: #c81623;
+    margin-right: 5px;
+}
+.g-jf span{
+    font-size: 12px;
+    margin-top: 5px;
+}
+/**********************************************
+*                    品牌店
+**********************************************/
+.brand-tit i.fa-circle{
+    font-size: 26px;
+    color: #303030;
+}
+.brand-tit h3{
+    margin-left: 32px;
+    line-height: 28px;
+}
+.brand-tit span{
+    left: -27px;
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+}
+.brand-tit i.fa-chevron-circle-right{
+    color: #898989;
+    font-size: 16px;
+    margin-left: 4px;
+}
+/*列表*/
+.brand-box{
+    width: 190px;
+    box-shadow: 0 0 3px #aaa;
+}
+.brand-box h5{
+    line-height: 28px;
+    color: #fff;
+}
+.b-1{
+    background: #018dec;
+}
+.b-2{
+    background: #fd5e00;
+}
+.b-3{
+    background: #f57397;
+}
+.b-4{
+    background: #00d9be;
+}
+.b-5{
+    background: #dc73ff;
+}
+.brand-img img{
+    width: 190px;
+    height: 120px;
+}
+.brand-logo li{
+    float: left;
+    width: 95px;
+}
+.brand-logo li img{
+    width: 75px;
+    height: 37px;
+}
+.bbd{border-bottom: 1px dotted #e6e6e6;}
+.brd{border-right: 1px dotted #e6e6e6;}
+.bbn{border-bottom: 0;}
+.brand-t-logo a{
+    display: block;
+    width: 190px;
+    height: 125px;
+}
+.brand-t-logo a img{
+    width: 190px;
+    height: 125px;
+}
+.brand-t-logo a + a{
+    margin-top: 3px;
+}
+/**********************************************
+*                    商朝活动
+**********************************************/
+.supermarket-top{
+    width: 240px;
+    height: 435px;
+    top: 3px;
+    background: #fff;
+    right: 0;
+    z-index: 3;
+}
+.suoer-tit{
+    background: url("../images/sc-tit.jpg") no-repeat;
+    width: 240px;
+    height: 90px;
+}
+.supermarket-top li{
+    line-height: 65px;
+    border-bottom: 1px solid #f7f7f9;
+    padding-left: 70px;
+    background: url("../images/sc-bg.jpg") no-repeat;
+    color: #777;
+}
+.supermarket-top li.zp{
+    background-position: 10px 5px;
+}
+.supermarket-top li.qq{
+    background-position: 10px -60px;
+}
+.supermarket-top li.qt{
+    background-position: 12px -120px;
+}
+.supermarket-top li.yj{
+    background-position: 12px -190px;
+}
+.supermarket-top a{
+    display: block;
+    width: 127px;
+    height: 63px;
+}
+.activity-box{
+    width: 590px;
+    height: 202px;
+    border: 1px solid #ccc;
+    padding: 1px;
+}
+.activity-box:hover{
+    border: 1px solid #c81724;
+    box-shadow: 0 0 3px #aaa;
+}
+.super-name{
+    width: 166px;
+}
+.super-name a{
+    display: block;
+}
+.super-name img{
+    width: 145px;
+    height: 130px;
+}
+.activity-img{
+    margin-left: 165px;
+}
+.activity-img img{
+    width: 420px;
+    height: 198px;
+}
+.activity-img a{
+    color: #fff;
+}
+.activity-bg{
+    width: 420px;
+    height: 30px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: #000;
+    opacity: .4;
+}
+.activity-tit{
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+}
+.close-ad{
+    padding: 6px 8px;
+    border: 1px solid #c81623;
+    right: 3px;
+    top: 3px;
+    color: #c81623;
+}
+.shop-box{
+    width: 855px;
+}
+.sidebar{
+    margin-left: 855px;
+    background: #eee;
+}
+
+.SlideShow-bd{
+    width: 403px;
+    height: 303px;
+    border: 1px solid #d9dddc;
+    padding: 1px;
+}
+.SlideShow-hd li{
+    float: left;
+    width: 93px;
+    height: 70px;
+    border: 1px solid #d9dddc;
+    padding: 1px;
+    margin: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.SlideShow-hd li i{
+    left: 50%;
+    top: -10px;
+    color: #b10001;
+    font-size: 14px;
+    margin-left: -4px;
+    display: none;
+}
+.SlideShow-hd li img{
+    width: 89px;
+    height: 66px;
+}
+.SlideShow-hd li.on{
+    border: 1px solid #b10001;
+}
+.SlideShow-hd li.on i{
+    display: block;
+}
+.ShopName{
+    margin-left: 410px;
+}
+.ShopName p{
+    color: #262427;
+}
+.ShopName h4 span{
+    color: #c71522;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.price{
+    line-height: 57px;
+    background: #f2f2f2;
+}
+.ShopSkin{
+    line-height: 28px;
+    overflow: hidden;
+}
+.ShopSkin li{
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+}
+.ShopSkin li a{
+    border: 1px solid #ccc;
+    display: block;
+    padding: 0 10px;
+}
+.ShopSkin li.selected a{
+    border: 2px solid #c81623;
+    margin: -1px;
+}
+.shop-btn{
+    width: 250px;
+    line-height: 40px;
+    background: #c71522;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+}
+/*详情*/
+.shop-info{
+    border: 1px solid #ddd;
+}
+.shop-hd{
+    height: 45px;
+    padding-left: 20px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+.shop-hd li{
+    float: left;
+    line-height: 45px;
+    padding: 0 25px;
+    position: relative;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    cursor: pointer;
+}
+.shop-hd li span{
+    color: #30569f;
+}
+.shop-hd li.on{
+    background: #fff;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    color: #c81623;
+}
+.selected-indicator {
+    position: absolute;
+    height: 2px;
+    top: -1px;
+    background: #c81623;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.shop-hd li.on .selected-indicator{
+    display: block;
+}
+.ShopInfoBox img{
+    max-width: 835px;
+    margin-bottom: 10px;
+}
+.CommentHd{
+    background: #f7f7f7;
+    line-height: 32px;
+}
+.CommentBd li{
+    border-bottom: 1px solid #ddd;
+}
+.sidebar a.undo{
+    font-size: 12px;
+}
+.sidebar a.undo i{
+    margin: 0 5px;
+}
+.SidebarShop li{
+    background: #fff;
+    padding: 10px;
+}
+.SidebarShop li + li{
+    border-top: 1px dotted #ddd;
+}
+.SidebarShop li a{
+    color: #666;
+}
+.SidebarShop li p{
+    line-height: 44px;
+}
+.SidebarShop li img{
+    width: 280px;
+    height: 260px;
+}

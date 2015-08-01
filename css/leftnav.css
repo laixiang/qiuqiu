@@ -104,3 +104,6 @@
 .sort:hover .SortLine2 ,.sort:hover .SortBox{
     display: block;
 }
+.NavAll:hover .LeftNavBox{
+    display: block;
+}
